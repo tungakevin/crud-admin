@@ -97,7 +97,7 @@
                     <!-- Main row -->
                     <div class="row">
                         <div class="col-md-12">
-                               <h4>Users</h4>
+                               <h4>Ibirego</h4>
                                 <hr>
                                 <table class="table table-striped w-100 py-0">
                                     <thead>
@@ -112,8 +112,8 @@
                                     </thead>
                                     <tbody>
                                     <?php
-                                    $currentUser = $_SESSION['user']['username'];
-                                    $sltQry = "SELECT * FROM `users` WHERE username !='$currentUser'";
+                                    $currentUser = $_SESSION['user']['id'];
+                                    $sltQry = "SELECT * FROM `ibirego` WHERE user ='$currentUser'";
                                     // $sltQry = "SELECT * FROM `users`";
                                     $res = mysqli_query($conn,$sltQry);
                                     $n = 1;

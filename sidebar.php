@@ -22,7 +22,10 @@
 
             
             <!-- Services -->
-            <li class="nav-item">
+            <?php 
+                if($_SESSION['user']['type'] == 'admin'){
+                    ?>
+                    <li class="nav-item">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fa fa-database"></i>
                     <p>
@@ -45,7 +48,19 @@
                     </li>
                 </ul>
             </li>
+                    <?php
+                }
+            ?>
             <!-- Settings -->
+            <li class="nav-item">
+                <a href="ibirego.php" class="nav-link">
+                    <i class="nav-icon fa fa-balance-scale"></i>
+                    <p>
+                        Ibirego
+                        <!-- <i class="fas fa-angle-left right"></i> -->
+                    </p>
+                </a>
+            </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fa fa-cog"></i>

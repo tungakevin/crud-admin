@@ -6,4 +6,4 @@ define("Db","nyamata");
 
 $conn = mysqli_connect(Host,User,Pass,Db);
 
-print $conn ? "": header('location:../ooops.php');
+print $conn ? "": header('location:ooops.php');
