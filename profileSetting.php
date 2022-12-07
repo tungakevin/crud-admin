@@ -94,7 +94,7 @@
                     <!-- Main row -->
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-center">
-                                    <h1>Hello Nyamata</h1>
+                                    <h1>Profile settings</h1>
                             </div>
                         <!-- /.col -->
                     </div>

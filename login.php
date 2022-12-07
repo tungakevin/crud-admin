@@ -32,7 +32,7 @@
             background-position:fixed;">
             <div class="col-md-6 col-sm-12 col-lg-5 bg-light rounded mx-5 px-5 py-5">
                 <h2>Get's Started.</h2>
-                <form class="form-group"  action="actions/loginOp.php" method="post">
+                <form class="form-group"  action="Auth/sign.php" method="post">
                     <?php
                         if(isset($_SESSION['error'])){
                     ?>

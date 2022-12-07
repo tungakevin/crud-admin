@@ -1,4 +1,6 @@
-
+<?php
+    require_once "./Auth/session.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
