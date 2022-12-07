@@ -1,11 +1,11 @@
-<a href="index.php" class="brand-link">
+<a href="index.php" class="brand-link bg-dark">
     <!-- <img src="./dist/img/miner-with-mining-equipment-design-character-on-white-background-free-vector.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
     <span class="fas fa-user-circle text-lg flex flex-column"></span>
-    <span class="brand-text font-weight-light">Admin</span>
+    <span class="brand-text font-weight-light"><?php print $_SESSION['user']['username'];?></span>
 </a>
 
 <!-- Sidebar -->
-<div class="sidebar">
+<div class="sidebar bg-dark">
 
     <!-- Sidebar Menu -->
     <nav class="mt-2">

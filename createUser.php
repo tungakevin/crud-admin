@@ -1,4 +1,6 @@
-
+<?php
+    require_once "./Auth/session.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,8 +96,49 @@
                     <!-- Main row -->
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-center">
-                                    <h1>Create a New user</h1>
-                            </div>
+                        <div class="col-md-6 col-sm-12 col-lg-5 bg-light rounded px-5 mx-5 py-5">
+                <h2>Create User.</h2>
+                <form class="form-group" action="auth/createAccount.php" method="post">
+                    
+                    <div class="input-container row">
+                        <label for="" class="label col-12">
+                            Username
+                        </label>
+                        <input type="text" name="username" placeholder="Username" class="form-control">
+                    </div>
+                    <div class="input-container row">
+                        <label for="" class="label col-12">
+                            Phone
+                        </label>
+                        <input type="text" name="phone" placeholder="Phone" class="form-control">
+                    </div>
+                    <div class="input-container row">
+                        <label for="" class="label col-12">
+                            Password
+                        </label>
+                        <input type="password" name="password" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="input-container row">
+                        <label for="" class="label col-12">
+                            Type
+                        </label>
+                        <select name="type" class="form-control">
+                            <option disabled selected>Select Type</option>
+                            <option>admin</option>
+                            <option>user</option>
+                            <option>guest</option>
+                        </select>
+                    </div>
+                    <div class="input-container row d-flex justify-content-between py-4">
+                        <div><button type="submit" class="btn btn-success px-5">
+                             <i class="fas fa-save"></i> &nbsp; Save
+                        </button>
+                    </div>
+                    </div>
+                </form>
+                
+            </div>
+                        </div>
                         <!-- /.col -->
                     </div>
                     <!-- /.row -->

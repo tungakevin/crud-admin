@@ -11,7 +11,13 @@ if(mysqli_num_rows($res)>0){
     $data = mysqli_fetch_array($res);
     if($data['password'] == $pass){
         $_SESSION['user'] = $data;
-        header('location:../index.php');
+        if($data['type'] == 'admin'){
+            header('location:../index.php');
+        }elseif($data['type'] == 'user'){
+            header('location:../index.php');
+        }else{
+            header('location:../index.php');
+        }
     }else{
         $_SESSION['error'] = "Incorrect Password!";
         header('location:../login.php');
